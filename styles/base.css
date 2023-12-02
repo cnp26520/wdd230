@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: #fefae0;
+}
+nav{
+    margin: 0 auto;
+	max-width: 770px;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+nav a:hover {
+	border: 2px solid #fff;
+    border-radius: 15px;
+}
+.active {
+	color: #bc4749;
+}
+main, header{
+    background-color: #a7c957;
+}
+section{
+    background-color: #6a994e;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #000;
+}
+header {
+    max-width: 767px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgb(226, 241, 234);
+    position: relative;
+    color: rgb(68, 90, 79);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header img{
+    grid-column: 1/2;
+}
+h1{
+    grid-column: 2/4;
+}
+
+main, footer {
+    font-family: sans-serif;
+    max-width: 767px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 15px;
+}
+h2{
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #bc4749;
+    border-radius: 15px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    padding: .5rem;
+    border-radius: 15px;
+    background-color:#a7c957;
+}
+main, header{
+    background-color: #ffffffd5;
+}
+footer, nav{
+    background-color: #386641;
+}
+nav{
+    background-color: #6a994e;
+}
+a{
+    color: #fefae0;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+footer p{
+    text-align: center;
+}
+p{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {font-family: 'Hedvig Letters Serif', serif;}
