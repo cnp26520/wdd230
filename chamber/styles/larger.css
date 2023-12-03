@@ -7,6 +7,7 @@
         flex: 1 1 100%;
     }
     main{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
     }
@@ -29,5 +30,20 @@
 	}
     nav ul li{
         border-bottom: none;
+    }
+    #main-wrapper{
+        grid-template-columns: span 2;
+        grid-template-rows: span 3;
+    }
+    #main-parent{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sideitem{
+        grid-column: 1/2;
+    }
+    .gallery{
+
+        grid-column: 2/4;
+        overflow: hidden;
     }
 }
