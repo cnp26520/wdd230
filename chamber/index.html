@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Petrinovich - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Christopher Petrinovich's Assignment Portal for all tasks and projects completed during WDD 230 - Web Frontend Development">
+    <title>Richmond Chamber of Commerce - Home</title>
+    <meta name="description" content="Christopher Petrinovich's home page for a mock webpage for the Richmond city chamber of commerce">
     <meta name="author" content="Christopher Petrinovich">
     <meta property="og:title" content="The Richmond Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cnp26520.github.io/wdd230/">
+    <meta property="og:url" content="https://cnp26520.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/A_downtown_view_of_Richmond%2C_VA.jpg/1280px-A_downtown_view_of_Richmond%2C_VA.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -21,46 +20,53 @@
 </head>
 <body>
   <header>
-    <div id="mode">🌑</div>
-    <img src="images/portrait.jpg" width="105" height="140" alt="Profile Picture of Christopher Petrinovich">
-    <h1>Christopher Petrinovich</h1>
+    <img src="images/virginia-flag.jpg" width="105" height="140" alt="Virginia State Flag">
+    <h1>Richmond Chamber of Commerce</h1>
   </header>
     <nav>
       <button id="menu"></button>
     <ul class="navigation">
-      <li><a href="#" class = "active"> Home</a></li>
+      <li><a href="https://cnp26520.github.io/wdd230/chamber/index.html" class = "active"> Home</a></li>
       <li><a href="#">Chamber</a></li>
       <li><a href="#">Site Plan</a></li>
       <li><a href="#">Form</a></li>
   </ul>
   </nav>
   <main>
-    <h2 class="big-heading">WDD 230: Web Frontend Development</h2>
+    <div id="hero">
+        <img src="images/richmond-sky-line.jpg" style="width: 100%;" alt="Picture of Richmond's skyline">
+        <button id="action">Join our Chamber Today
+        </button>
+    </div>
     <section class="card">
-      <h3>Learning Activities</h3>
+      <h3>Events</h3>
       <ul>
-          <li>
-            Week 01:
-            <a href="#">Layout |</a>
-            <a href="#">Media Query |</a>
-            <a href="#">JS Pen</a>
-          </li>
-          <li>Week 02:</li>
-          <li>Week 03: <a href="week03/images/landscape.webp">WebP</a></li>
-          <li>Week 04:</li>
-          <li>Week 05:</li>
-          <li>Week 06:</li>
+          <li>Cat Show: 12/19/23</li>
+          <li>New Years Celeberation: 01/01/23</li>
+          <li>Rodeo: 1/15/24</li>
+          <li>State Fair: 1/28/24</li>
       </ul>
     </section>
     <section class="card">
-      <h3>Information</h3>
+      <h3>Weather</h3>
       <p>Richmond, Virginia</p>
-      <p>65°F Sunny</p>
-      <p>Number of Visits: 7</p>
+      <p>73°F Sunny</p>
+      <p>Humidity 75%</p>
     </section>
+    <section class="card">
+        <h3 id="advertisement">Capital One</h3>
+        <p>Invest in your Future!</p>
+        <div id="contact">
+            <p>inquiries@capitalone.com</p>
+            <p>555-894-9989</p>
+            <p>website</p>
+        </div>
+      </section>
   </main>
   <footer>
     <p id="copyright">©"Year Placeholder" Christopher Petrinovich Virginia</p>
+    <p id="Name">Christopher Petrinovich</p>
+    <p id="Course">WDD 230 Chamber Project</p>
     <p id="lastModified"></p>
   </footer>
   <script src="scripts/getdates.js"></script>
