@@ -29,4 +29,12 @@
     nav ul li{
         border-bottom: none;
     }
+.hero{
+    grid-column: span 2;
+    position: relative;
+}
+.hero img{
+    max-width: 930px;
+    border-radius: 15px;
+}
 }

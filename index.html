@@ -22,7 +22,7 @@
 <body>
   <header>
     <div id="mode">🌑</div>
-    <img src="images/portrait.jpg" width="105" height="140" alt="Profile Picture of Christopher Petrinovich">
+    <img src="images/portrait.webp" width="105" height="140" alt="Profile Picture of Christopher Petrinovich">
     <h1>Christopher Petrinovich</h1>
   </header>
     <nav>
@@ -35,6 +35,15 @@
   </ul>
   </nav>
   <main>
+    <div class="hero">
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/washington-dc-temple-small.webp">
+      <img src="images/washington-dc-temple-large.webp" alt="The Washington DC Temple">
+    </picture>
+    <div class="herolabel">
+			<p>Washington D.C. Temple</p>
+		</div>
+  </div>
     <h2 class="big-heading">WDD 230: Web Frontend Development</h2>
     <section class="card">
       <h3>Learning Activities</h3>
@@ -56,7 +65,7 @@
       <h3>Information</h3>
       <p>Richmond, Virginia</p>
       <p>65°F Sunny</p>
-      <p>Number of Visits: 7</p>
+      <p class="visits">Number of Visits: 7</p>
     </section>
   </main>
   <footer>
@@ -66,5 +75,6 @@
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/darkmode.js"></script>
+  <script src="scripts/localStore.js"></script>
 </body>
 </html>
