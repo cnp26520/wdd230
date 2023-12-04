@@ -9,7 +9,7 @@
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr ;
+
     }
     #hero{
         grid-column: span 2;
@@ -31,19 +31,28 @@
     nav ul li{
         border-bottom: none;
     }
-    #main-wrapper{
-        grid-template-columns: span 2;
-        grid-template-rows: span 3;
-    }
-    #main-parent{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    .main-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }   
     .sideitem{
-        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: auto 3fr;
+        justify-content: center;
+        align-items: center;
     }
-    .gallery{
-
-        grid-column: 2/4;
-        overflow: hidden;
+    .sidebar{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+    .photos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .text-title{
+        width: 100%;
+    }
+    /* #main-parent{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    } */
 }
