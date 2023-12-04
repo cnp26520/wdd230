@@ -55,4 +55,7 @@
     /* #main-parent{
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     } */
+    .hover:hover{
+        opacity: .5;
+    }
 }
