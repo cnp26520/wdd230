@@ -34,7 +34,7 @@
     .main-wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
-    }   
+    }
     .sideitem{
         display: grid;
         grid-template-rows: auto 3fr;
