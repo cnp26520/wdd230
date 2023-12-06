@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css"
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
@@ -35,51 +36,34 @@
   </ul>
   </nav>
   <main>
-    <div class="hero">
-    <picture>
-      <source media="(max-width: 400px)" srcset="images/washington-dc-temple-small.webp">
-      <img src="images/washington-dc-temple-large.webp" alt="The Washington DC Temple">
-    </picture>
-    <div class="herolabel">
-			<p>Washington D.C. Temple</p>
-		</div>
-  </div>
-    <h2 class="big-heading">WDD 230: Web Frontend Development</h2>
-    <section class="card">
-      <h3>Learning Activities</h3>
-      <ul>
-          <li>
-            Week 01:
-            <a href="week01/holygrail.html">Layout |</a>
-            <a href="week01/media-query.html">Media Query |</a>
-            <a href="https://codepen.io/cnp26520/pen/zYemgeR">JS Pen</a>
-          </li>
-          <li>Week 02:</li>
-          <a href="week02/design.html">Design |</a>
-          <a href="https://codepen.io/cnp26520/pen/qBgQaNP">Hamburger |</a>
-          <li>Week 03: 
-          <a href="week03/images/landscape.webp">WebP |</a>
-          <a href="week03/lazyload.html">Lazy Load |</a>
-          <a href="week03/responsive-images.html">Responsive Images |</a>
-          <a href="week03/bom.html">Local Storage |</a>
-          </li>
-          <li>Week 04:</li>
-          <a href="https://codepen.io/cnp26520/pen/NWoeMZW">CSS Psuedo |</a>
-          <a href="week04/images/css-combinators.PNG">CSS Combinators |</a>
-          <a href="week04/tablebuild.html">Table |</a>
-          <a href="form-start/index.html">Form |</a>
-          <li>Week 05:</li>
-          <li>Week 06:</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>Information</h3>
-      <p>Richmond, Virginia</p>
-      <p>65°F Sunny</p>
-      <p class="visits">Number of Visits: 7</p>
-    </section>
-    <iframe class="map-holder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.13362810604!2d-77.57566259149426!3d37.52476847519852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1701733827117!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </main>
+    <form method="get" action="thanks.html">
+        <div id="message"></div>
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">Username* <input type="text" id="user" name="username" required></label>
+            <label class="top">Password* <input type="password" id="secret" name="password" pattern="[A-Za-z0-9].{8,}" required></label>
+            <label class="top">Password Repeated* <input type="password" id="secret-repeated" name="password-repeated" pattern="[A-Za-z0-9].{8,}" required></label>
+            <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid byui.edu email address" required></label>
+            <label class="top">Page Rating 
+            <div id="rangevalue">1</div>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" >
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+        </label>
+
+        <input type="submit" value="Propose my Course" class="submitBtn">
+    </form>
+</main>
   <footer>
     <p id="copyright">©"Year Placeholder" Christopher Petrinovich Virginia</p>
     <p id="lastModified"></p>
@@ -88,5 +72,7 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/darkmode.js"></script>
   <script src="scripts/localStore.js"></script>
+  <script src="scripts/form.js"></script>
+  <script src="scripts/range.js"></script>
 </body>
 </html>
