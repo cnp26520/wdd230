@@ -1,0 +1,15 @@
+:root{
+    --borderspecs: 1px solid #000;
+}
+tbody tr:nth-child(odd) {
+    background-color:aqua;
+  }
+td, th{
+    border: var(--borderspecs);
+}
+thead  tr:nth-child(odd){
+    background-color: #000;
+}
+.outlier{
+    background-color: #000;
+}
