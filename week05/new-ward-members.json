@@ -1,0 +1,23 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "03/20/2016",
+    "familySize": "3",
+    "visitedBishop": "yes",
+    "members": [
+        {
+            "name": "Josh",
+            "gender": "Male",
+            "Birthdate": "01/01/1987"
+        },
+        {
+            "name": "Sarah",
+            "gender": "Female",
+            "Birthdate": "02/21/1986"
+        },
+        {
+            "name": "Jared",
+            "gender": "Male",
+            "Birthdate": "05/06/2014"
+        }
+    ]
+}
