@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Petrinovich - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Christopher Petrinovich's Assignment Portal for all tasks and projects completed during WDD 230 - Web Frontend Development">
+    <title>Richmond Chamber of Commerce - Join</title>
+    <meta name="description" content="Page to become a member of the Richmond Chamber of Commerce">
     <meta name="author" content="Christopher Petrinovich">
     <meta property="og:title" content="The Richmond Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cnp26520.github.io/wdd230/">
+    <meta property="og:url" content="https://cnp26520.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/A_downtown_view_of_Richmond%2C_VA.jpg/1280px-A_downtown_view_of_Richmond%2C_VA.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -21,9 +20,8 @@
 </head>
 <body>
   <header>
-    <div id="mode">🌑</div>
-    <img src="images/portrait.webp" width="105" height="140" alt="Profile Picture of Christopher Petrinovich">
-    <h1>Christopher Petrinovich</h1>
+    <img src="images/virginia-flag.jpg" width="105" height="140" alt="Virginia State Flag">
+    <h1>Richmond Chamber of Commerce</h1>
   </header>
     <nav>
       <button id="menu" aria-label="Show Navigation Menu"></button>
@@ -31,7 +29,7 @@
       <li><a href="https://cnp26520.github.io/wdd230/chamber/index.html" class = "active"> Home</a></li>
       <li><a href="https://cnp26520.github.io/wdd230/chamber/discover.html">Chamber</a></li>
       <li><a href="#">Site Plan</a></li>
-      <li><a href="https://cnp26520.github.io/wdd230/form.html">Form</a></li>
+      <li><a href="#">Form</a></li>
   </ul>
   </nav>
   <main>
@@ -41,10 +39,10 @@
             <legend>Applicant Information</legend>
             <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
             <label class="top">Last Name* <input type="text" id="lname" name="lname" pattern="[A-Za-z0-9].{8,}" title="Please enter a alphanumeric password with more than 8 characters" required></label>
-            <label class="top">Title* <input type="password" id="secret-repeated" name="password-repeated" pattern="[A-Za-z0-9].{8,}" title="Please match the password" required></label>
+            <label class="top">Job Title* <input type="text" id="jobTitle" name="jobTitle" pattern="[A-Za-z0-9].{8,}" title="Please match the password" required></label>
             <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+\-]+@byui+\.+edu$" title="Please enter a valid byui.edu email address" required></label>
-            <label class="top">Mobile* <input type="telephone" id="phone" name="phone" title="Please match the password" required></label>
-            <label class="top">Organization* <input type="text" id="org" name="org" title="Please match the password" required></label>
+            <label class="top">Mobile* <input type="tel" id="phone" name="phone" title="Please match the password" required></label>
+            <label class="top">Organization* <input type="textarea" id="org" name="org" title="Please match the password" required></label>
             <div>Membership Level</div>
                 <label class="sbs"><input type="radio" name="Membership" value="NP"> Non Profit</label>
                 <label class="sbs"><input type="radio" name="Membership" value="bronze"> Bronze</label>
@@ -76,11 +74,12 @@
   </main>
   <footer>
     <p id="copyright">©"Year Placeholder" Christopher Petrinovich Virginia</p>
+    <p id="Name">Christopher Petrinovich</p>
+    <p id="Course">WDD 230 Chamber Project</p>
     <p id="lastModified"></p>
   </footer>
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/darkmode.js"></script>
-  <script src="scripts/localStore.js"></script>
 </body>
 </html>
