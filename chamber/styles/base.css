@@ -178,3 +178,65 @@ p{
     font-family: sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {font-family: 'Hedvig Letters Serif', serif;}
+
+:root{
+    --primary-color: #6a994e;
+    --secondary-color: #fefae0;
+    --border-specs: solid 1px var(--primary-color);
+    --text-color: #000;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 30px;
+	width: 320px;
+}
+#rangevalue{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+#rangevalues option {
+	flex: 1 1 auto;
+}
+input[type="range"]{
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+form{
+    grid-column: span 2;
+}
+fieldset{
+    border-radius: 15px;
+}
+
+form label.top{
+    padding: 1rem;
+    color: #bc4749;
+    display: block;
+}
+form label.top input{
+    display: block;
+    font-size: 1rem;
+    border: var(--border-specs);
+    border-radius: 15px;
+    padding: .75rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    width: 360px;
+    max-width: 20rem;
+}
+
+form label.top input:required:valid{
+    background-color: rgba(106, 153, 78, .2);
+}
+form input.submitBtn{
+    border: none;
+    background-color: #bc4749;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 20%;
+    max-width: 20rem;
+}
