@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richmond Chamber of Commerce - Join</title>
-    <meta name="description" content="Page to become a member of the Richmond Chamber of Commerce">
+    <meta name="description" content="Page to fill a form and gain membership to the Richmond Virginia Chamber of Commerce">
     <meta name="author" content="Christopher Petrinovich">
     <meta property="og:title" content="The Richmond Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -42,13 +42,14 @@
             <label class="top">Job Title* <input type="text" id="jobTitle" name="jobTitle" pattern="[A-Za-z0-9].{8,}" title="Please match the password" required></label>
             <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+\-]+@byui+\.+edu$" title="Please enter a valid byui.edu email address" required></label>
             <label class="top">Mobile* <input type="tel" id="phone" name="phone" title="Please match the password" required></label>
-            <label class="top">Organization* <input type="textarea" id="org" name="org" title="Please match the password" required></label>
+            <label class="top">Organization* <input type="text" id="org" name="org" title="Please match the password" required></label>
             <div>Membership Level</div>
                 <label class="sbs"><input type="radio" name="Membership" value="NP"> Non Profit</label>
                 <label class="sbs"><input type="radio" name="Membership" value="bronze"> Bronze</label>
                 <label class="sbs"><input type="radio" name="Membership" value="silver"> Silver</label>
                 <label class="sbs"><input type="radio" name="Membership" value="gold"> Gold</label>
 
+            <label class="top">Organization description* <textarea id="description" name="description" title="Please match the password" required></label>
             <label class="top">Timestamp* <input type="hidden" id="timestamp" name="timestamp" title="Please match the password" required></label>
             <label class="top">Page Rating 
             <span id="rangevalue">1</span>
