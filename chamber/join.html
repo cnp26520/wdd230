@@ -33,9 +33,56 @@
   </ul>
   </nav>
   <main>
-    <form method="get" action="thankyou.html">
-        <div id="message"></div>
-        <fieldset>
+    <form method="get" action="thankyou.html" class="join-form">
+        <h2 class="benefits-header">
+          Membership Packages
+        </h2>
+        <div class="np-bronze">
+          <h3>
+            Non-Profit (NP)
+          </h3>
+          <ul class="benefits">
+            <li>Access to Chamber Wide Networking Events</li>
+            <li>Mailing List Access</li>
+            <li>Business Support Services</li>
+            <li>Discounts On Advertising</li>
+            <li>Member Only Prices</li>
+          </ul>
+          <h3>
+            Bronze
+          </h3>
+          <ul class="benefits">
+            <li>Sponsorship Opportunities</li>
+            <li>One Newsletter Ad</li>
+            <li>Access To Recruiting programs</li>
+            <li>Chamber President Emails</li>
+            <li>Opportunity to Speak at Chamber Meetings</li>
+          </ul>
+        </div>
+        <div class="silver-gold">
+          <h3>
+            Silver
+          </h3>
+          <ul class="benefits">
+            <li>Board Meeting Invitations</li>
+            <li>Board Meeting Recognitions</li>
+            <li>VIP Seating At Annual Chamber Gala</li>
+            <li>One Free Seat To An Event</li>
+            <li>Inter-Chamber Meeting Opportunities/li>
+          </ul>
+          <h3>
+            Gold
+          </h3>
+          <ul class="benefits">
+            <li>Seat on board of directors</li>
+            <li>Lunch with chamber President</li>
+            <li>Sponsorship recognition at chosen event</li>
+            <li>VIP Seating at any chamber events</li>
+            <li>Annual Meeting with Mayor of Richmond</li>
+          </ul>
+        </div>
+
+        <fieldset class="form-section">
             <legend>Applicant Information</legend>
             <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
             <label class="top">Last Name* <input type="text" id="lname" name="lname" pattern="[A-Za-z0-9].{8,}" title="Please enter a alphanumeric password with more than 8 characters" required></label>
@@ -49,28 +96,10 @@
                 <label class="sbs"><input type="radio" name="Membership" value="silver"> Silver</label>
                 <label class="sbs"><input type="radio" name="Membership" value="gold"> Gold</label>
 
-            <label class="top">Organization description* <textarea id="description" name="description" title="Please match the password" required></label>
-            <label class="top">Timestamp* <input type="hidden" id="timestamp" name="timestamp" title="Please match the password" required></label>
-            <label class="top">Page Rating 
-            <span id="rangevalue">1</span>
-            <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" >
-            <datalist id="rangevalues">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
-        </label>
-    </fieldset>
-
-        <input type="submit" value="Join" class="formButton">
-        
+            <label class="top">Organization description* <textarea id="description" name="description" title="Please match the password" required></textarea></label>
+            <label class="top">Timestamp* <input type="hidden" id="timestamp" name="timestamp" title="Please match the password"></label>
+            <input type="submit" value="Join" class="formButton">
+    </fieldset>    
     </form>
   </main>
   <footer>
