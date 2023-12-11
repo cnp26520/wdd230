@@ -212,8 +212,10 @@ fieldset{
 
 form label.top{
     padding: 1rem;
-    color: #bc4749;
     display: block;
+}
+form label.req{
+    color: #bc4749;
 }
 form label.top input{
     display: block;
@@ -227,10 +229,10 @@ form label.top input{
     max-width: 20rem;
 }
 
-form label.top input:required:valid{
+form label.top input:valid{
     background-color: rgba(106, 153, 78, .2);
 }
-form input.submitBtn{
+form input.formButton{
     border: none;
     background-color: #bc4749;
     color: var(--secondary-color);
@@ -254,4 +256,27 @@ form input.submitBtn{
 }
 .benefits-header ul li{
     margin: 1rem auto;
+}
+.benefits li{
+    margin: 4.25rem auto;
+    color: #bc4749;
+}
+form label.sbs{
+    display: block;
+    padding: 1rem;
+    color: #000;
+}
+.radio-header{
+    color: #bc4749;
+    padding: 1rem;
+}
+#description{
+    font-size: 1rem;
+    border: var(--border-specs);
+    border-radius: 15px;
+    padding: .75rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    width: 360px;
+    max-width: 20rem;   
 }

@@ -42,7 +42,7 @@
             Non-Profit (NP)
           </h3>
           <ul class="benefits">
-            <li>Access to Chamber Wide Networking Events</li>
+            <li>Access to Chamber Events</li>
             <li>Mailing List Access</li>
             <li>Business Support Services</li>
             <li>Discounts On Advertising</li>
@@ -84,21 +84,23 @@
 
         <fieldset class="form-section">
             <legend>Applicant Information</legend>
-            <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
-            <label class="top">Last Name* <input type="text" id="lname" name="lname" pattern="[A-Za-z0-9].{8,}" title="Please enter a alphanumeric password with more than 8 characters" required></label>
-            <label class="top">Job Title* <input type="text" id="jobTitle" name="jobTitle" pattern="[A-Za-z0-9].{8,}" title="Please match the password" required></label>
-            <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+\-]+@byui+\.+edu$" title="Please enter a valid byui.edu email address" required></label>
-            <label class="top">Mobile* <input type="tel" id="phone" name="phone" title="Please match the password" required></label>
-            <label class="top">Organization* <input type="text" id="org" name="org" title="Please match the password" required></label>
-            <div>Membership Level</div>
+            <label class="top req">First Name* <input type="text" id="fname" name="fname" title="Please enter a valid first name" required></label>
+            <label class="top req">Last Name* <input type="text" id="lname" name="lname" title="Please enter a valid last name" required></label>
+            <label class="top">Job Title <input type="text" id="jobTitle" name="jobTitle" pattern="[A-Za-z\-\s]{7,}" title="Please use at least 7 letters, hyphens, or spaces"></label>
+            <label class="top req">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="Please enter a valid email address" required></label>
+            <label class="top req">Mobile* <input type="tel" id="phone" name="phone" title="Please match the password" required></label>
+            <label class="top req">Organization* <input type="text" id="org" name="org" title="Please enter valid name of the business" required></label>
+            <div class="radio-header">Membership Level*</div>
                 <label class="sbs"><input type="radio" name="Membership" value="NP"> Non Profit</label>
                 <label class="sbs"><input type="radio" name="Membership" value="bronze"> Bronze</label>
                 <label class="sbs"><input type="radio" name="Membership" value="silver"> Silver</label>
                 <label class="sbs"><input type="radio" name="Membership" value="gold"> Gold</label>
 
-            <label class="top">Organization description* <textarea id="description" name="description" title="Please match the password" required></textarea></label>
-            <label class="top">Timestamp* <input type="hidden" id="timestamp" name="timestamp" title="Please match the password"></label>
+            <label class="top">Organization description
+              <br>
+              <textarea id="description" name="description" title="Please enter a description of the business" rows="4" cols="38"></textarea></label>
             <input type="submit" value="Join" class="formButton">
+            <label class="top hideable"><input type="hidden" id="timestamp" name="timestamp" title="Please match the password"></label>
     </fieldset>    
     </form>
   </main>

@@ -81,8 +81,8 @@
     .form-section{
         grid-column: 3/4;
     }
-    .benefits li{
-        margin: 2.5rem auto;
-        color: red;
+    .filledform{
+        text-align: center;
+        grid-column: 1/3;
     }
 }
